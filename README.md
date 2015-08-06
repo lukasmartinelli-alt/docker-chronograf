@@ -19,3 +19,8 @@ docker run -t lukasmartinelli/chronograf
 | `INFLUXDB_PROTO`        | InfluxDB logging protocol (default `http`)
 | `INFLUXDB_HOST`         | InfluxDB host (default `localhost`)
 | `INFLUXDB_PORT`         | InfluxDB port (default `8086`)
+
+## Tags
+
+- 0.1.0
+- latest
