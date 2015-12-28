@@ -1,11 +1,13 @@
 FROM debian:jessie
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV CHRONOGRAF_VERSION 0.1.0
+# Override with e.g. $ docker build --build-arg CHRONOGRAF_VERSION=1.2.3
+ARG CHRONOGRAF_VERSION=0.4.0
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y wget
 RUN wget https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb
-RUN dpkg -i chronograf_0.1.0_amd64.deb && rm chronograf_0.1.0_amd64.deb
+RUN dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb && rm chronograf_${CHRONOGRAF_VERSION}_amd64.deb
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
