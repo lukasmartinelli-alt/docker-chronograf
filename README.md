@@ -1,6 +1,8 @@
 # docker-chronograf
 
-[![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://registry.hub.docker.com/u/lukasmartinelli/chronograf/) [![Docker Pulls](https://img.shields.io/docker/pulls/lukasmartinelli/chronograf.svg)](https://registry.hub.docker.com/u/lukasmartinelli/chronograf/)
+![stability-deprecated](https://img.shields.io/badge/stability-deprecated-red.svg) [![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://registry.hub.docker.com/u/lukasmartinelli/chronograf/) [![Docker Pulls](https://img.shields.io/docker/pulls/lukasmartinelli/chronograf.svg)](https://registry.hub.docker.com/u/lukasmartinelli/chronograf/)
+
+> :warning: This repository is no longer maintained by Lukas Martinelli.
 
 Docker Image for [InfluxDB Chronograf](https://influxdb.com/chronograf/index.html).
 
